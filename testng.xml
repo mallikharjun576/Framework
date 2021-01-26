@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite" parallel ="tests" thread-count="2">
+	<parameter name="val1" value="3" />
+   	<parameter name="val2" value="50" />
+   	<test name="Params">
+		   <parameter name="val1" value="4" />
+		   <parameter name="val2" value="21" />
+		   <parameter name="message" value="Normal Parameter Selected" />
+		   <classes>
+		      <class name="Sample.Params" />
+		   </classes>
+   </test>
+		<listeners>
+	        <listener class-name="TestNGPractice.ListenerTestNG"/>
+	    </listeners>
+  <test  name="Test1">
+    <classes>
+      <class name="Sample.NewTest"/>
+      <class name = "TestNGPractice.ListenerTestNG"> </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test2">
+  <classes>
+	  	<class name = "Sample.TestNG"></class>
+	    <class name = "TestNGPractice.ListenerTestNG"> </class>
+     </classes>
+  </test>
+</suite> <!-- Suite -->

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Smoke Suite</th></tr>
+<tr><td><a href="#t0">Params</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">48</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test1</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">13,075</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Test2</a></td><td class="num">0</td><td class="num attn">2</td><td class="num attn">2</td><td class="num">604,619</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">6</th><th class="num attn">2</th><th class="num attn">2</th><th class="num">617,742</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Smoke Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Params &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Sample.Params</td><td><a href="#m0">Diff</a></td><td rowspan="1">1611664625279</td><td rowspan="1">10</td></tr><tr class="passedeven"><td><a href="#m1">OP</a></td><td rowspan="1">1611664625293</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m2">Sum</a></td><td rowspan="1">1611664625294</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Sample.NewTest</td><td><a href="#m3">afterTest</a></td><td rowspan="1">1611664637594</td><td rowspan="1">728</td></tr><tr class="passedeven"><td><a href="#m4">beforeTest</a></td><td rowspan="1">1611664625279</td><td rowspan="1">4860</td></tr><tr class="passedeven"><td><a href="#m5">testEasy</a></td><td rowspan="1">1611664630140</td><td rowspan="1">7453</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Test2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Sample.TestNG</td><td><a href="#m6">closeBrowser</a></td><td rowspan="1">1611665229987</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m7">openBrowser</a></td><td rowspan="1">1611664625370</td><td rowspan="1">604604</td></tr><tr><th colspan="4">Test2 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">Sample.TestNG</td><td><a href="#m8">checkTitle</a></td><td rowspan="1">1611665229986</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">click_element</a></td><td rowspan="1">1611665229986</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Params</h2><h3 id="m0">Sample.Params#Diff</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>4</td><td>21</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Sample.Params#OP</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Normal Parameter Selected</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Sample.Params#Sum</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>4</td><td>21</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1</h2><h3 id="m3">Sample.NewTest#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Sample.NewTest#beforeTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Sample.NewTest#testEasy</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test2</h2><h3 id="m6">Sample.TestNG#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at Sample.TestNG.closeBrowser(TestNG.java:47)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Sample.TestNG#openBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-LF81N7A&apos;, ip: &apos;192.168.0.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0083C0C3+3326147]
+	Ordinal0 [0x00720851+2164817]
+	Ordinal0 [0x005A7298+619160]
+	Ordinal0 [0x0059B17F+569727]
+	Ordinal0 [0x0059A421+566305]
+	Ordinal0 [0x0059A815+567317]
+	Ordinal0 [0x0059A135+565557]
+	Ordinal0 [0x005A38B1+604337]
+	Ordinal0 [0x0059A0F1+565489]
+	Ordinal0 [0x0059AEA2+568994]
+	Ordinal0 [0x0059A421+566305]
+	Ordinal0 [0x0059A815+567317]
+	Ordinal0 [0x0059A135+565557]
+	Ordinal0 [0x005A1D2C+597292]
+	Ordinal0 [0x0059A0F1+565489]
+	Ordinal0 [0x0059AEA2+568994]
+	Ordinal0 [0x0059A421+566305]
+	Ordinal0 [0x0059A815+567317]
+	Ordinal0 [0x0059A135+565557]
+	Ordinal0 [0x0059FE62+589410]
+	Ordinal0 [0x0059A0F1+565489]
+	Ordinal0 [0x0059AEA2+568994]
+	Ordinal0 [0x0059A421+566305]
+	Ordinal0 [0x0059A815+567317]
+	Ordinal0 [0x0059A135+565557]
+	Ordinal0 [0x0059F075+585845]
+	Ordinal0 [0x0059A0F1+565489]
+	Ordinal0 [0x0059AEA2+568994]
+	Ordinal0 [0x0059A421+566305]
+	Ordinal0 [0x0059A815+567317]
+	Ordinal0 [0x0059A135+565557]
+	Ordinal0 [0x00596776+550774]
+	Ordinal0 [0x0059A0F1+565489]
+	Ordinal0 [0x00599F13+565011]
+	Ordinal0 [0x00599D07+564487]
+	Ordinal0 [0x005A82C0+623296]
+	Ordinal0 [0x00546BDD+224221]
+	Ordinal0 [0x00545CAC+220332]
+	Ordinal0 [0x0054189B+202907]
+	Ordinal0 [0x00523DF4+81396]
+	Ordinal0 [0x00524DEE+85486]
+	Ordinal0 [0x00524D79+85369]
+	Ordinal0 [0x007385DC+2262492]
+	GetHandleVerifier [0x009C2874+1487204]
+	GetHandleVerifier [0x009C23CD+1486013]
+	GetHandleVerifier [0x009CA368+1518680]
+	GetHandleVerifier [0x009C2F4E+1488958]
+	Ordinal0 [0x0072ED0D+2223373]
+	Ordinal0 [0x0073A12B+2269483]
+	Ordinal0 [0x0073A26F+2269807]
+	Ordinal0 [0x0074ECB8+2354360]
+	BaseThreadInitThunk [0x7707FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778875F4+228]
+	RtlGetAppContainerNamedObjectPath [0x778875C4+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at Sample.TestNG.openBrowser(TestNG.java:27)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Sample.TestNG#checkTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method TestNG.checkTitle()[pri:0, instance:Sample.TestNG@edf4efb] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Sample.TestNG#click_element</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method TestNG.click_element()[pri:0, instance:Sample.TestNG@edf4efb] depends on not successfully finished methods
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

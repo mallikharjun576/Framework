@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Smoke Suite]" parallel="tests">
+  <parameter name="val2" value="50"/>
+  <parameter name="val1" value="3"/>
+  <listeners>
+    <listener class-name="TestNGPractice.ListenerTestNG"/>
+  </listeners>
+  <test thread-count="2" verbose="0" name="Test2(failed)" parallel="tests">
+    <classes>
+      <class name="Sample.TestNG">
+        <methods>
+          <include name="checkTitle"/>
+          <include name="click_element"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Sample.TestNG -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->
